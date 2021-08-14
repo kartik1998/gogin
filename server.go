@@ -28,7 +28,7 @@ func main() {
 		ctx.JSON(200, videoController.FindAll())
 	})
 
-	server.POST("/videos", func(ctx *gin.Context) {
+	server.POST("/videos", middlewares.BasicAuth(), func(ctx *gin.Context) {
 		ctx.JSON(200, videoController.Save(ctx))
 	})
 
