@@ -11,13 +11,14 @@ curl --location --request POST 'http://localhost:8080/videos' \
 --header 'Authorization: Basic Z29naW46Z29naW5wd2Q=' \
 --header 'Content-Type: application/json' \
 --data-raw '{
-    "title": "drifts",
+    "title": "Cool",
     "description": "tokyo",
     "url": "https://s3.amazon.com/bucket/drifts/tokyo/a23kaje324n.23.mkv",
     "author": {
         "firstname": "kartik",
         "lastname": "rawat",
-        "age": 22
+        "age": 22,
+        "email": "k@gmail.com"
     }
 }'
 ```
