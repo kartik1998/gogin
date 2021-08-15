@@ -13,7 +13,12 @@ curl --location --request POST 'http://localhost:8080/videos' \
 --data-raw '{
     "title": "drifts",
     "description": "tokyo",
-    "url": "https://s3.amazon.com/bucket/drifts/tokyo/a23kaje324n.23.mkv"
+    "url": "https://s3.amazon.com/bucket/drifts/tokyo/a23kaje324n.23.mkv",
+    "author": {
+        "firstname": "kartik",
+        "lastname": "rawat",
+        "age": 22
+    }
 }'
 ```
 
